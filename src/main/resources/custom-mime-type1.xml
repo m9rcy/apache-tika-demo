@@ -1,0 +1,25 @@
+<mime-info>
+    <mime-type type="external/mime-type">
+        <_comment>A Custom type</_comment>
+        <glob pattern="*.external.mime.type" />
+        <magic priority="50">
+            <match value="61 73 64 66 61" type="string" offset="0" />
+        </magic>
+        <sub-class-of type="text/plain" />
+    </mime-type>
+    <mime-type type="application/octet-stream-bin">
+        <_comment>Custom Bin</_comment>
+        <glob pattern="*.bin"/>
+        <magic priority="50">
+            <match value="00 00 00 00" type="string" offset="0" />
+        </magic>
+        <sub-class-of type="application/octet-stream" />
+    </mime-type>
+    <mime-type type="text/properties">
+        <_comment>Java Properties</_comment>
+        <glob pattern="*.properties"/>
+        <magic priority="50">
+            <match value="73 70 72 69" type="string" offset="0" />
+        </magic>
+    </mime-type>
+</mime-info>
